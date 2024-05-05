@@ -23,6 +23,12 @@ public class CourseCommandLineRunner implements CommandLineRunner {
 
         System.out.println(repository.findById(1L));
         System.out.println(repository.findById(2L));
+
+        System.out.println(repository.findAll());
+        System.out.println(repository.count());
+
+        System.out.println(repository.findByAuthor("Udemy"));
+        System.out.println(repository.findByName("Learn Angular"));
     }
 
 }
