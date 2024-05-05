@@ -1,9 +1,19 @@
 package com.nexus.springboot.learnjpaandhibernate.course;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Course {
 
+    @Id //Primary key
     private Long id;
+
+    @Column(name="name") //Column's name in the table
     private String name;
+
+    @Column(name="author") //Column's name in the table
     private String author;
 
     private Course() {
